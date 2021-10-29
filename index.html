@@ -99,34 +99,77 @@
             <div class="skills-board mt-5 d-flex align-content-center">
                 
                 <div class="row">
-                    <div class="col-6 d-inline-block">
+                    <div class="col col-12 col-md-6 mt-3">
                         <button 
                             class="skills-btn" 
                             type="button" 
-                            data-bs-toggle="collapse" 
-                            data-bs-target="#coding" 
-                            aria-expanded="false" 
-                            aria-controls="coding"
+                            data-bs-toggle="modal" 
+                            data-bs-target="#coding"
                         >
                         <img class="skills-logo" src="./assets/logo/ant-design_code-filled.svg" alt="coding logo" />
                         <span class="space">Coding</span>
                         </button>
                     </div>
-                    <div class="col-6">
+                    <!-- Modal -->
+                    <div class="modal fade" id="coding" tabindex="-1" aria-labelledby="codingLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="codingLabel">Programming Languages</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body d-flex flex-row justify-content-evenly">
+                                <img 
+                                    class="skills-logo-2"
+                                    src="./assets/logo/logos_html-5.svg" 
+                                    alt="HTML 5" 
+                                    data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" 
+                                    title="HTML 5"
+                                />
+                                <img 
+                                    class="skills-logo-2" 
+                                    src="./assets/logo/logos_css-3.svg" 
+                                    alt="CSS 3"
+                                    data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" 
+                                    title="CSS 3"
+                                />
+                                <img 
+                                    class="skills-logo-2" 
+                                    src="./assets/logo/logos_javascript.svg" 
+                                    alt="Javascript"
+                                    data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" 
+                                    title="Javascript"
+                                />
+                                <img 
+                                    class="skills-logo-2" 
+                                    src="./assets/logo/logos_bootstrap.svg" 
+                                    alt="Bootstrap"
+                                    data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" 
+                                    title="Bootstrap"
+                                />
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-12 col-md-6 mt-3">
                         <button 
                             class="skills-btn" 
                             type="button" 
-                            data-bs-toggle="collapse" 
-                            data-bs-target="#thinking" 
-                            aria-expanded="false" 
-                            aria-controls="thinking"
                         >
                         <img class="skills-logo" src="./assets/logo/fluent_thinking-20-filled.svg" alt="thinking logo" />
                         <span class="d-none d-md-inline space">Critical Thinking</span>
                         <span class="d-md-none space">Thinking</span>
                         </button>
                     </div>
-                    <div class="col-12 mt-3">
+                    <!-- <div class="col col-12 mt-sm-0 mt-md-3 order-1">
                         <div class="collapse multi-collapse" id="coding">
                             <div class="card card-body d-flex flex-row justify-content-evenly">
                                 <img 
@@ -163,35 +206,61 @@
                                 />
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     
-                    <div class="col-6 mt-3">
+                    <div class="col col-12 col-md-6 mt-3">
                         <button 
                             class="skills-btn" 
                             type="button" 
-                            data-bs-toggle="collapse" 
-                            data-bs-target="#debug" 
-                            aria-expanded="false" 
-                            aria-controls="debug"
                         >
                         <img class="skills-logo" src="./assets/logo/mdi_android-debug-bridge.svg" alt="debugging logo" />
                         <span class="space">Debugging</span>
                         </button>
                     </div>
-                    <div class="col-6 mt-3">
+                    <div class="col col-12 col-md-6 mt-3">
                         <button 
                             class="skills-btn" 
                             type="button" 
-                            data-bs-toggle="collapse" 
-                            data-bs-target="#design" 
-                            aria-expanded="false" 
-                            aria-controls="design"
+                            data-bs-toggle="modal" 
+                            data-bs-target="#design"
                         >
                         <img class="skills-logo" src="./assets/logo/ic_sharp-design-services.svg" alt="design logo" />
                         <span class="space">Design</spanc>
                         </button>
                     </div>
-                    <div class="col-12 mt-3">
+                    <!-- Modal -->
+                    <div class="modal fade" id="design" tabindex="-1" aria-labelledby="designLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="designLabel">Designing Tools</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body d-flex flex-row justify-content-evenly">
+                                <img 
+                                    class="skills-logo-2" 
+                                    src="./assets/logo/adobe-xd.svg" 
+                                    alt="Adobe Xd"
+                                    data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" 
+                                    title="Adobe Xd"
+                                />
+                                <img 
+                                    class="skills-logo-2" 
+                                    src="./assets/logo/grommet-icons_figma.svg" 
+                                    alt="Figma"
+                                    data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" 
+                                    title="Figma"
+                                />
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col col-12 mt-sm-0 mt-md-3 order-5">
                         <div class="collapse multi-collapse" id="design">
                             <div class="card card-body d-flex flex-row justify-content-evenly">
                                 <img 
@@ -212,7 +281,7 @@
                                 />
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
