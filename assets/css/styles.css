@@ -138,7 +138,7 @@ main {
     color: #f2f2f2;
     font-family: Source Code Pro;
     font-size: 18px;
-    padding: 50px;
+    padding: 30px;
     padding-top: 0;
 }
 
@@ -155,7 +155,7 @@ main {
     color: #f2f2f2;
     text-align: left;
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 16px;
     border: 2px solid #c4c4c4;
 }
 
@@ -175,7 +175,11 @@ main {
     height: 40px;
     width: 40px;
     padding-left: 10px;
-    margin-left: 20px;
+    margin-left: 0;
+}
+
+.space {
+    margin-left: 0;
 }
 
 .skills-logo-2 {
@@ -232,5 +236,15 @@ main {
         padding: 100px;
         padding-top: 0;
         font-size: 20px;
+    }
+    .skills-logo {
+        padding-left: 10px;
+        margin-left: 20px;
+    }
+    .skills-btn {
+        font-size: 20px;
+    }
+    .space {
+        margin-left: 30px;
     }
 }
