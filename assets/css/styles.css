@@ -73,6 +73,7 @@ a:hover {
 }
 
 .active {
+    color: #fff !important;
     text-decoration: underline !important;
 }
 
@@ -81,7 +82,7 @@ a:hover {
     font-size: 20px;
     padding: 20px;
     padding-right: 30px;
-    color: #e5e5e5;
+    color: #c4c4c4;
     text-align: right;
 }
 
@@ -282,12 +283,27 @@ footer {
     margin-top: 30px;
 }
 
+.overlay-content-social {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.custom-nav-logo {
+    margin: 10px;
+    width: 32px;
+    height: 32px;
+    filter: invert(95%) sepia(1%) saturate(10%) hue-rotate(323deg) brightness(85%) contrast(88%);
+}
+
 .overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 22px;
     font-family: Source Code Pro;
-    color: #f2f2f2;
+    color: #c4c4c4;
     display: block;
     transition: 0.3s;
 }
