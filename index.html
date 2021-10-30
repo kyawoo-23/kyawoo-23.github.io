@@ -13,7 +13,27 @@
     <title>Kko Portfolio</title>
   </head>
   <body>
-    <div class="leftMenuBar d-none d-md-block">
+    <nav class="navbar navbar-expand-lg fixed-top mx-0 d-lg-none">
+        <div class="container-fluid custom-nav">
+          <a class="navbar-brand d-lg-none" href="index.html"><span class="logo-title">KKO</span></a>
+          <div class="overlay" id="myNav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content" onclick="closeNav()">
+              <a class="nav-link p-3 pt-0 active" href="#intro">Intro</a>
+              <a class="nav-link p-3" href="#about">About</a>
+              <a class="nav-link p-3" href="#skills">Skills</a>
+              <!-- <a class="nav-link p-3" href="#records">Records</a> -->
+              <a class="nav-link p-3" href="#works">Works</a>
+            </div>
+          </div>
+  
+          <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <span class="d-flex justify-content-center hamburger"><img src="./assets/logo/ci_hamburger.svg" alt="menu logo"></span>
+          </button>
+        </div>
+    </nav>
+    <div class="leftMenuBar d-none d-lg-block">
         <nav class="nav flex-column">
             <a class="left-link left-title d-flex justify-content-center" href="#">
                 KKO
@@ -32,7 +52,7 @@
             </a>
             </nav>
     </div>
-    <div class="rightMenuBar d-none d-md-block">
+    <div class="rightMenuBar d-none d-lg-block">
         <nav class="nav flex-column">
             <a class="right-link active" href="#intro">Intro</a>
             <a class="right-link" href="#about">About</a>
@@ -45,22 +65,22 @@
     <main>
         <section class="intro" id="intro">
             <div class="row">
-                <div class="col col-12 col-md-6">
-                    <div class="dog-ear mx-auto mx-md-0 d-flex justify-content-center align-items-center">
+                <div class="col col-12 col-lg-6">
+                    <div class="dog-ear mx-auto mx-lg-0 d-flex justify-content-center align-items-center">
                         Intro
                     </div>
                     <div class="text-1 mt-5">
-                        <div class="text-1-1 text-center text-md-start">Hi, I'm <br> 
+                        <div class="text-1-1 text-center text-lg-start">Hi, I'm <br> 
                             <span class="name">Kyaw Kyaw Oo</span>
                         </div>
                         <br>
-                        <div class="text-1-2 text-center text-md-start">
+                        <div class="text-1-2 text-center text-lg-start">
                             A freelance Web Developer<br>
                             with UI/UX Designing Skills 
                         </div>
                     </div>
                 </div>
-                <div class="col col-12 col-md-6 mt-5 mt-md-0 d-flex justify-content-center justify-content-md-end">
+                <div class="col col-12 col-lg-6 mt-5 mt-lg-0 d-flex justify-content-center justify-content-lg-end">
                     <div class="my-profile float-end">
                         <img class="img-fluid" src="./assets/img/profile.png" alt="My Photo" />
                     </div>
@@ -73,25 +93,25 @@
                 About
             </div>
 
-            <div class="text-2-1 mt-5">
+            <div class="text-2-1 mt-3">
                 Just a normal 3<sup>rd</sup> year old, IT(CS) student studying at 
                 UIT (University of Information Technology).  
                 
             </div>
-            <div class="text-2-2 mt-5 d-flex justify-content-center">
+            <div class="text-2-2 mt-0 mt-lg-5 d-flex justify-content-center">
                 <div>
                     const about = (Kko) => { <br>
-                    <span class="invisible-sm visible-md">&emsp;</span>&emsp;Name: <span>Kyaw Kyaw Oo</span> ; <br>
-                    <span class="invisible-sm visible-md">&emsp;</span>&emsp;Nickname: <span>Jerry</span> ; <br>
-                    <span class="invisible-sm visible-md">&emsp;</span>&emsp;Birthday: <span>April/23/2001</span> ; <br>
-                    <span class="invisible-sm visible-md">&emsp;</span>&emsp;Email: <span>kyawkyawjek@gmail.com</span> ; <br>
-                    <span class="invisible-sm visible-md">&emsp;</span>&emsp;Phone: <span>+959795559054</span> ; <br>
+                    <span class="invisible-sm visible-lg">&emsp;</span>&emsp;Name: <span>Kyaw Kyaw Oo</span> ; <br>
+                    <span class="invisible-sm visible-lg">&emsp;</span>&emsp;Nickname: <span>Jerry</span> ; <br>
+                    <span class="invisible-sm visible-lg">&emsp;</span>&emsp;Birthday: <span>April/23/2001</span> ; <br>
+                    <span class="invisible-sm visible-lg">&emsp;</span>&emsp;Email: <span>kyawkyawjek@gmail.com</span> ; <br>
+                    <span class="invisible-sm visible-lg">&emsp;</span>&emsp;Phone: <span>+959795559054</span> ; <br>
                     }
                 </div>
             </div>
         </section>
 
-        <section class="skills" id="skills">
+        <section class="skills mt-5 mt-lg-0" id="skills">
             <div class="dog-ear mx-auto d-flex justify-content-center align-items-center">
                 Skills
             </div>
@@ -99,7 +119,7 @@
             <div class="skills-board mt-5 d-flex align-content-center">
 
                 <div class="row">
-                    <div class="col col-12 col-md-6 mt-3" onclick="switchVisible1();">
+                    <div class="col col-12 col-lg-6 mt-3" onclick="switchVisible1();">
                         <button 
                             class="skills-btn" 
                             type="button" 
@@ -145,17 +165,17 @@
                         </button>
                     </div>
 
-                    <div class="col col-12 col-md-6 mt-3">
+                    <div class="col col-12 col-lg-6 mt-3">
                         <button 
                             class="skills-btn" 
                             type="button" 
                         >
                         <img class="skills-logo" src="./assets/logo/fluent_thinking-20-filled.svg" alt="thinking logo" />
-                        <span class="d-none d-md-inline space">Critical Thinking</span>
-                        <span class="d-md-none space">Thinking</span>
+                        <span class="d-none d-xl-inline space">Critical Thinking</span>
+                        <span class="d-xl-none space">Thinking</span>
                         </button>
                     </div>
-                    <!-- <div class="col col-12 mt-sm-0 mt-md-3 order-1">
+                    <!-- <div class="col col-12 mt-sm-0 mt-lg-3 order-1">
                         <div class="collapse multi-collapse" id="coding">
                             <div class="card card-body d-flex flex-row justify-content-evenly">
                                 <img 
@@ -194,7 +214,7 @@
                         </div>
                     </div> -->
                     
-                    <div class="col col-12 col-md-6 mt-3">
+                    <div class="col col-12 col-lg-6 mt-3">
                         <button 
                             class="skills-btn" 
                             type="button" 
@@ -203,7 +223,7 @@
                             <span class="space">Debugging</span>
                         </button>
                     </div>
-                    <div class="col col-12 col-md-6 mt-3" onclick="switchVisible2();">
+                    <div class="col col-12 col-lg-6 mt-3" onclick="switchVisible2();">
                         <button 
                             class="skills-btn" 
                             type="button"
@@ -232,7 +252,7 @@
                         </div>
                         </button>
                     </div>
-                    <!-- <div class="col col-12 mt-sm-0 mt-md-3 order-5">
+                    <!-- <div class="col col-12 mt-sm-0 mt-lg-3 order-5">
                         <div class="collapse multi-collapse" id="design">
                             <div class="card card-body d-flex flex-row justify-content-evenly">
                                 <img 
@@ -301,9 +321,9 @@
                 <div class="project-img col-xs-12 col-sm-6 col-lg-4 col-xs-12 gx-0">
                     <img id="myImg" class="img-fluid" src="./assets/works/JLPT FlashCard.png" alt="JLPT FlashCard App Design" onclick="onClick(this);">
                 </div>
-                <!-- <div class="project-img col-xs-12 col-sm-6 col-lg-4 col-xs-12 gx-0">
-                    <img id="myImg" loading="lazy" class="img-fluid" src="./assets/works/.jpg" alt="Healthy Way App" onclick="onClick(this);">
-                </div> -->
+                <div class="project-img col-xs-12 col-sm-6 col-lg-4 col-xs-12 gx-0">
+                    <img id="myImg" class="img-fluid" src="./assets/works/My Portfolio.png" alt="My Portfolio Design" onclick="onClick(this);">
+                </div>
                 <!-- <div class="project-img col-xs-12 col-sm-6 col-lg-4 col-xs-12 gx-0">
                     <img id="myImg" loading="lazy" class="img-fluid" src="./assets/works/.png" alt="Daily Design Activity Website" onclick="onClick(this);">
                 </div> -->
@@ -322,10 +342,11 @@
 		<img src="./assets/logo/upToTop.svg" class="upBtn" alt="UpToTop Btn">
 	</button>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/ulg/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="./assets/js/active.js"></script>
+    <script type="text/javascript" src="./assets/js/overlay.js"></script>
     <script type="text/javascript" src="./assets/js/upToTop.js"></script>
     <script type="text/javascript" src="./assets/js/click.js"></script>
     <script type="text/javascript" src="./assets/js/modal.js"></script>

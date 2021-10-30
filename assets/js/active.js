@@ -1,5 +1,5 @@
 let menuSection = document.querySelectorAll('.rightMenuBar nav a');
-// let menuSection2 = document.querySelectorAll('nav .overlay .overlay-content a');
+let menuSection2 = document.querySelectorAll('nav .overlay .overlay-content a');
 
 // for clickable event
 menuSection.forEach(v=> {
@@ -22,8 +22,8 @@ window.onscroll = (()=> {
       menuSection.forEach(v=> v.classList.remove('active'))
       menuSection[j].classList.add('active')
 
-    //   menuSection2.forEach(v=> v.classList.remove('active'))
-    //   menuSection2[j].classList.add('active')
+      menuSection2.forEach(v=> v.classList.remove('active'))
+      menuSection2[j].classList.add('active')
     }
   })
 });
