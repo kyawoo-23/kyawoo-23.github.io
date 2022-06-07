@@ -173,6 +173,49 @@ main {
     margin-right: 20px;
 }
 
+.skill-title {
+    color: #f2f2f2;
+    font-family: Source Code Pro Light;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.web-pj img {
+    border-radius: 10px;
+}
+
+.web-pj {
+    position: relative;
+    padding: 0 10px;
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+
+.web-pj > span {
+    display: none;
+    opacity: 0;
+}
+
+.web-pj:hover > span {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #e5e5e5;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(27, 27, 27, .8);
+    transition: opacity .5s ease-in-out;
+}
+
 .skills-btn {
     width: 100%;
     height: 80%;
